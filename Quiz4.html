@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Page</title>
+    </head>
+    <body>
+        <h1>Register</h1>
+        <form>
+            <label for="FName">First Name</label>
+            <input name="FName" id="FName" type="text" Placeholder="John" required>
+            <label for="LName">Last Name</label>
+            <input name="name" id="LName" type="text" Placeholder="Smith" required>
+            
+            <div>
+            <label for="Male">Male</label>
+            <input name="gender" id="Male" type="radio" value="Male">
+
+            <label for="Female">Female</label>
+            <input name="gender" id="Female" type="radio" value="Female">
+
+            <label for="Other">Other</label>
+            <input name="gender" id="Other" type="radio" value="Other">
+            </div>
+            <div>
+              <label for="email">Email:</label>
+              <input id="email" type="email" Placeholder="your email" required>
+        
+              <label for="pwd">Password:</label>            <input pattern=".{5,10}" id="pwd" type="password" required title="Password must be between 5 and 10 characters">
+            </div>
+            
+
+            <div>
+            <label for="birthday">Birthday:
+            <select name="Month" id="birthday">
+                <option value="Month">Month</option>
+                <option value="January">Jan</option>
+                <option value="February">Feb</option>
+                <option value="March">Mar</option>
+            </select>
+            <select name="Day" id="birthday">
+                    <option value="Day">Day</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+            </select>
+            <select name="Year" id="birthday">
+                    <option value="Year">Year</option>
+                    <option value="1990">1990</option>
+                    <option value="1991">1991</option>
+                    <option value="1992">1992</option>
+            </select>
+            </label>
+            </div>
+            <div>
+                <label for="agreement">I Agree:</label>
+                <input type="checkbox">
+            </div>
+
+            <button>Submit</button>
+        </form>
+        
+    </body>
+</html>
